@@ -64,6 +64,8 @@ sns.displot(x = 'max_spent_in_single_shopping', data = bank_marketing_df, kind =
 plt.grid()
 plt.title('Maximum amount spent in one purchase (in 1000s) by the customer')
 
+bank_marketing_df.describe()
+
 sns.pairplot(bank_marketing_df)
 
 sns.boxplot(data = bank_marketing_df, orient = "h")
